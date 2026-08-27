@@ -300,109 +300,39 @@ a { color: inherit; text-decoration: none; }
 }
 .product-link:hover { color: var(--rose-900); }
 
-/* ---------- Lookbook feature ---------- */
-.lookbook-feature {
-  margin: 0 0 3rem;
-  text-align: center;
-}
-.lookbook-feature img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  border: 6px solid #fff;
-}
-.lookbook-feature figcaption {
-  margin-top: 0.9rem;
-  font-family: var(--font-display);
-  font-style: italic;
-  color: var(--rose-500);
-}
-
 /* ---------- Collection cards ---------- */
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  gap: 1.6rem;
 }
 .collection-card {
-  position: relative;
+  margin: 0;
   border-radius: var(--radius);
-  padding: 1.6rem;
   overflow: hidden;
-  background:
-    linear-gradient(150deg, color-mix(in srgb, var(--c1) 20%, #fff), color-mix(in srgb, var(--c4) 55%, #fff));
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: #fff;
+  border: 6px solid #fff;
   box-shadow: var(--shadow-sm);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  min-height: 240px;
 }
 .collection-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
-.collection-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
-  border: 6px solid rgba(255, 255, 255, 0.55);
-  pointer-events: none;
-}
 .collection-photo {
   width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  margin-bottom: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  height: auto;          /* show the full square card, no cropping */
+  display: block;
+  border-radius: calc(var(--radius) - 6px);
 }
-.collection-no {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--ink-soft);
-  margin: 0;
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
-.collection-name {
-  font-family: var(--font-script);
-  font-size: 2.2rem;
-  line-height: 1;
-  margin: 0.15rem 0 0.1rem;
-  color: var(--c1);
-}
-.collection-mood {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--ink);
-  margin: 0 0 0.9rem;
-}
-.collection-items {
-  list-style: none;
-  padding: 0; margin: 0 0 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-.collection-items li {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 999px;
-  padding: 0.24rem 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--ink);
-}
-.swatches { display: flex; gap: 0.5rem; margin-top: auto; }
-.swatches span {
-  width: 22px; height: 22px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.85);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
-}
-.swatches span:nth-child(1) { background: var(--c1); }
-.swatches span:nth-child(2) { background: var(--c2); }
-.swatches span:nth-child(3) { background: var(--c3); }
-.swatches span:nth-child(4) { background: var(--c4); }
 
 /* ---------- Why ---------- */
 .why-grid {
