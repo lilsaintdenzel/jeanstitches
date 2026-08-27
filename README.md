@@ -36,7 +36,7 @@ python3 -m http.server 8000
 ## Contact
 
 - TikTok / Instagram / Facebook: **@jean_stitches**
-- Phone / WhatsApp: **053 464 1657**
+- WhatsApp: **+233 53 464 1657** (`https://wa.me/233534641657`)
 
 ## Customising
 
