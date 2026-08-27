@@ -21,7 +21,7 @@ pouches and more, presented across six themed collections.
    (Soft Girl, Blue Skies, Earthy, Chocolate & Cream, Berry, Sunset)
 4. **Why Choose Us**: the three brand values
 5. **Our Story**: about the maker
-6. **Get in Touch**: TikTok, Instagram, Facebook, phone
+6. **Get in Touch**: TikTok and WhatsApp
 
 ## Running it
 
@@ -35,7 +35,7 @@ python3 -m http.server 8000
 
 ## Contact
 
-- TikTok / Instagram / Facebook: **@jean_stitches**
+- TikTok: **@jean_stitches**
 - WhatsApp: **+233 53 464 1657** (`https://wa.me/233534641657`)
 
 ## Customising
